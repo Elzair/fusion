@@ -8,3 +8,5 @@ target_include_directories(boost_fusion BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE_
 
 install(TARGETS boost_fusion DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::fusion ALIAS boost_fusion)
